@@ -1,0 +1,7 @@
+gen_mod_spit:
+  path: /gen-mod/spit
+  defaults:
+    _controller: \Drupal\gen_mod\Controller\GenModController::spitting
+    _title: 'spit'
+  requirements:
+    _permission: 'access content'

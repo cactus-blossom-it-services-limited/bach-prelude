@@ -1,0 +1,5 @@
+name: 'gen mod'
+type: module
+description: "Let us test out drupal console"
+package: Drupalize Me
+core_version_requirement: ^8 || ^9
