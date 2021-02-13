@@ -1,0 +1,17 @@
+uuid = 25469e7e-6d96-11eb-a9fc-0242ac1c0003
+name = 
+tool_name = mariabackup
+tool_command = --backup --target-dir=/mnt/ddev_config/db_snapshots/before-installing-migrate-modules --user=root --password=... --socket=/var/tmp/mysql.sock
+tool_version = 10.3.23-MariaDB
+ibbackup_version = 10.3.23-MariaDB
+server_version = 10.3.23-MariaDB-1:10.3.23+maria~focal-log
+start_time = 2021-02-13 00:55:17
+end_time = 2021-02-13 00:55:20
+lock_time = 0
+binlog_pos = filename 'mysql-bin.000005', position '29437182', GTID of the last change '0-1-40043'
+innodb_from_lsn = 0
+innodb_to_lsn = 471594953
+partial = N
+incremental = N
+format = file
+compressed = N

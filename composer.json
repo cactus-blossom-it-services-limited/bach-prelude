@@ -16,9 +16,16 @@
     ],
     "require": {
         "composer/installers": "^1.9",
+        "drupal/console": "~1.0",
         "drupal/core-composer-scaffold": "^9.1",
         "drupal/core-project-message": "^9.1",
-        "drupal/core-recommended": "^9.1"
+        "drupal/core-recommended": "^9.1",
+        "drupal/devel": "^4.1",
+        "drupal/feeds": "^3.0@alpha",
+        "drupal/migrate_plus": "^5.1",
+        "kint-php/kint": "^3.3",
+        "roave/better-reflection": "^4.3",
+        "sainsburys/guzzle-oauth2-plugin": "^3.0"
     },
     "conflict": {
         "drupal/drupal": "*"

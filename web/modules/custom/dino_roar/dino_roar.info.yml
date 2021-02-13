@@ -1,0 +1,5 @@
+name: Dino ROAR
+type: module
+description: "ROAR at you"
+package: Drupalize Me
+core_version_requirement: ^8 || ^9

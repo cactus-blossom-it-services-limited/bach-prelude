@@ -15,9 +15,9 @@ services:
     command: ''
     container_name: ddev-d9custmoddevbook-db
     environment:
-      COLUMNS: '189'
+      COLUMNS: '158'
       DDEV_PROJECT: d9custmoddevbook
-      LINES: '52'
+      LINES: '15'
       TZ: ''
     healthcheck:
       interval: 1s
@@ -85,7 +85,7 @@ services:
     - SYS_PTRACE
     container_name: ddev-d9custmoddevbook-web
     environment:
-      COLUMNS: '189'
+      COLUMNS: '158'
       DDEV_PHP_VERSION: '7.3'
       DDEV_PRIMARY_URL: http://d9custmoddevbook.ddev.site:8000
       DDEV_PROJECT: d9custmoddevbook
@@ -104,7 +104,7 @@ services:
       HTTPS_EXPOSE: 8443:80,8026:8025
       HTTP_EXPOSE: 8000:80,8025:8025
       IS_DDEV_PROJECT: "true"
-      LINES: '52'
+      LINES: '15'
       SSH_AUTH_SOCK: /home/.ssh-agent/socket
       TZ: ''
       VIRTUAL_HOST: d9custmoddevbook.ddev.site
