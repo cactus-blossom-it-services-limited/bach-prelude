@@ -1,0 +1,4 @@
+backup_type = full-backuped
+from_lsn = 0
+to_lsn = 44804432
+last_lsn = 44804441

@@ -1,0 +1,17 @@
+uuid = f482e01b-6f0d-11eb-8ac6-0242ac1c0003
+name = 
+tool_name = mariabackup
+tool_command = --backup --target-dir=/mnt/ddev_config/db_snapshots/bach-prelude_20210214214525 --user=root --password=... --socket=/var/tmp/mysql.sock
+tool_version = 10.3.23-MariaDB
+ibbackup_version = 10.3.23-MariaDB
+server_version = 10.3.23-MariaDB-1:10.3.23+maria~focal-log
+start_time = 2021-02-14 21:45:26
+end_time = 2021-02-14 21:45:29
+lock_time = 0
+binlog_pos = filename 'mysql-bin.000005', position '1391400', GTID of the last change '0-1-9436'
+innodb_from_lsn = 0
+innodb_to_lsn = 44804432
+partial = N
+incremental = N
+format = file
+compressed = N
