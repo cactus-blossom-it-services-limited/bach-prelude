@@ -146,9 +146,9 @@ use_dns_when_possible: true
 # In this case the user must provide all such settings.
 
 # no_project_mount: false
-# (Experimental) If true, ddev will not mount the project into the web container; 
+# (Experimental) If true, ddev will not mount the project into the web container;
 # the user is responsible for mounting it manually or via a script.
-# This is to enable experimentation with alternate file mounting strategies. 
+# This is to enable experimentation with alternate file mounting strategies.
 # For advanced users only!
 
 # provider: default # Currently either "default" or "pantheon"
@@ -163,3 +163,19 @@ use_dns_when_possible: true
 # post-import-db:
 #   - exec: drush cr
 #   - exec: drush updb
+
+# AF: See https://susi.dev/ddev-phpstorm-integration
+#webimage_extra_packages: [ssh]
+
+#hooks:
+#  post-start:
+#    - exec: "sudo chmod 600 /home/andrew/.ssh/authorized_keys"
+#    - exec: "sudo chmod o+w /etc/ssh/sshd_config"
+#    - exec: "sudo echo \"PasswordAuthentication no\" >> /etc/ssh/sshd_config"
+#    - exec: "sudo echo \"UsePAM no\" >> /etc/ssh/sshd_config"
+#    - exec: "sudo echo \"PubkeyAuthentication yes\" >> /etc/ssh/sshd_config"
+#    - exec: "sudo echo \"AuthorizedKeysFile     .ssh/authorized_keys\" >> /etc/ssh/sshd_config"
+#    - exec: "sudo echo \"SyslogFacility AUTHPRIV\" >> /etc/ssh/sshd_config"
+#    - exec: "sudo echo \"LogLevel VERBOSE\" >> /etc/ssh/sshd_config"
+#    - exec: "sudo chmod o-w /etc/ssh/sshd_config"
+#    - exec: "sudo service ssh start"
